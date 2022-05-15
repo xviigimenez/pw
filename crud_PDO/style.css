@@ -1,0 +1,65 @@
+body {
+    font-family: Arial;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+h1,h2{
+    text-align: center;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    align: center;
+    overflow: hidden;
+    width: 20%;
+    margin: 5% auto;
+}
+li {
+    display: inline;
+}
+li a {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    color: gray;
+}
+div table {
+    width: 50%;
+    margin: 10% auto;
+    align: center;
+}
+th, td {
+    text-align: center;
+}
+th:hover {
+    color: white;
+}
+td:hover {
+    color: grey;
+}
+form {
+    color: white;
+    width: 45%;
+    margin: 5% 27%;
+    text-align: center;
+}
+.tabela{
+    border: 5px white double;
+    margin: 0 20% 0 20%;
+}
+#dataNasc,#matricula,#nome,#mensalidade{
+	text-align:center;
+}
+#resposta{
+	text-align: center;
+	color: white;
+}

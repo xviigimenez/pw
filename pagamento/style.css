@@ -1,0 +1,27 @@
+body{
+	background-size: 100%;
+    background-attachment: fixed;
+  	background-image: linear-gradient(to bottom right, white, orange);
+	font-family: Arial;
+}
+h2 {
+	margin: 0%;
+}
+#form{
+	margin: 1% 35% 0 35%;
+	text-align: center;
+	border: 3px black dotted;
+}
+#descricao{
+	width: 200px;
+	height: 120px;
+}
+h1{
+	font-size: 40;
+}
+label{
+	font-size: 17;
+}
+input[type='number'], input[type='text']{
+    width: 120px;
+}
