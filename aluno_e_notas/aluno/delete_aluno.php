@@ -1,6 +1,7 @@
 <?php
 include "../database_PDO.php";
-$Matricula = $_POST['matricula'];
+if(isset($_POST['matricula'])){$Matricula = $_POST['matricula'];}
+if(isset($_GET['matricula'])){$Matricula = $_GET['matricula'];}
 
 
 try{

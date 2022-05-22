@@ -1,0 +1,76 @@
+body {
+    font-family: Arial;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+h1,h2{
+    text-align: center;
+    color: black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+    width: 30%;
+    margin: 5% auto;
+}
+li {
+    display: inline;
+}
+li a {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    color: gray;
+}
+div table {
+    width: 50%;
+    margin: 1% auto;
+}
+th, td {
+    text-align: center;
+}
+th:hover {
+    color: black;
+}
+td:hover {
+    color: grey;
+}
+table, th, td {
+    color: black;
+	border: 3px;
+    border-color: black;
+    border-collapse: collapse;
+}
+th, td {
+    border-style: solid;
+    padding: 1px;
+}
+tbody {
+    color: black;
+}
+form {
+    color: black;
+    width: 45%;
+    margin: 5% 27%;
+    text-align: center;
+}
+.tabela{
+    border: 5px black double;
+    margin: 0% 20% 0% 20%;
+}
+#dataNasc,#matricula,#nome,#mensalidade,#nota_1,#nota_2{
+	text-align:center;
+}
+#resposta{
+	text-align: center;
+	color: black;
+}

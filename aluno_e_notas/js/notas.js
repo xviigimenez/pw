@@ -18,7 +18,7 @@ function criar_nota(){
 			}, 2500);
         })
     return false;
-}
+};
 
 // Exclusão de Registros
 function deletar_nota(){
@@ -38,20 +38,6 @@ function deletar_nota(){
 		setTimeout(function() {
 			window.location.reload(1);
 		}, 2500);
-    })
-    return false;
-};
-
-function deletar_nota_bloco(mat){
-    $.ajax({
-        method: 'GET',
-        url: "excluir.php?matricula=" + mat + '"',
-    })
-
-    .done(function(){
-		setTimeout(function() {
-			window.location.reload(1);
-		}, 1);
     })
     return false;
 };

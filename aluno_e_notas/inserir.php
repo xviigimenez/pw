@@ -17,27 +17,24 @@
     			</ul>
 			</nav>
 		</div>
-		
         <div class="tabela">
             <h1>Cadastro de aluno</h1>
             <form name="cadastroAluno" method="POST" action="" id="frm_cadastroAluno"><br>
                 <label>Matrícula</label><br>
-		<input type="number" name="matricula" id="matricula" placeholder="1"><br><br>
+        		<input type="number" name="matricula" id="matricula" placeholder="1"><br><br>
                 <label>Nome</label><br>
-		<input type="text" name="nome" id="nome" placeholder="Gustavo"><br><br>
+		        <input type="text" name="nome" id="nome" placeholder="Gustavo"><br><br>
                 <label>Nascimento</label><br>
-		<input type="date" name="dataNasc" id="dataNasc" placeholder="2004-08-08"><br><br>
+		        <input type="date" name="dataNasc" id="dataNasc" placeholder="2004-08-08"><br><br>
                 <div name="botoes" id="btn_div">
-			<input type="button" name="enviar" value="Cadastrar" id="btn_enviar" onclick="cadastro_aluno();">
-			<input type="button" name="apagar" value="Apagar" id="btn_apagar" onclick="deletar_aluno();">
-		</div>
+			        <input type="button" name="enviar" value="Cadastrar" id="btn_enviar" onclick="cadastro_aluno();">
+			        <input type="button" name="apagar" value="Apagar" id="btn_apagar" onclick="deletar_aluno();">
+		        </div>
             </form>
         </div>
-
         <h2 id="h2">Retorno do JSON</h2>
         <div id="resposta">
         </div>
-
         <script src="js/aluno.js"></script>
     </body>
 </html>
