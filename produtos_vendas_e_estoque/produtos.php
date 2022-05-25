@@ -14,23 +14,25 @@
                     <li><a href="produtos.php"><b>Produtos</b></a></li>
                     <li><a href="vendas.php">Vendas</a></li>
                     <li><a href="estoque.php">Estoque</a></li>
-                    <li><a href="relatório.php">Relatório</a></li>
+                    <li><a href="relatorio.php">Relatório</a></li>
                 </ul>
             </nav>
         </div>
-        <div>
-            <form name="produto" method="POST" id="form_produto"><br>
+        <div id="div_prod">
+            <form name="produto" method="POST" action="" id="form_produto"><br>
                 <label>Código do produto: </label>
-                <input type="number" name="codigo_produto" id="input_codigo_produto"><br><br>
+                <input type="number" name="cod_prod" id="cod_prod"><br><br>
                 <label>Descrição: </label>
-                <input type="text" name="descricao" id="input_descricao"><br><br>
+                <input type="text" name="descricao" id="descricao"><br><br>
                 <label>Valor: R$</label>
-                <input type="number" name="valor" id="input_valor"><br><br>
+                <input type="number" name="valor" id="valor"><br><br>
                 <label>Vencimento: </label>
-                <input type="date" name="vencimento" id="input_vencimento"><br><br>
-                <input type="button" name="cadastrar" value="Cadastrar" id="button_cadastrar">
-                <input type="button" name="excluir" value="Excluir" id="button_excluir">
+                <input type="date" name="vencimento" id="vencimento"><br><br>
+                <input type="button" name="cadastrar" value="Cadastrar" id="button_cadastrar" onclick="inserir();">
+                <input type="button" name="excluir" value="Excluir" id="button_excluir" onclick="deletar();"><br>
             </form>
         </div>
+
+        <script src="js/produtos.js"></script>
     </body>
 </html>

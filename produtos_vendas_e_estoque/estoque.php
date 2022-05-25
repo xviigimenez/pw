@@ -14,25 +14,27 @@
                     <li><a href="produtos.php">Produtos</a></li>
                     <li><a href="vendas.php">Vendas</a></li>
                     <li><a href="estoque.php"><b>Estoque</b></a></li>
-                    <li><a href="relatório.php">Relatório</a></li>
+                    <li><a href="relatorio.php">Relatório</a></li>
                 </ul>
             </nav>
         </div>
-        <div>
-            <form name="estoque" method="POST" id="form_estoque"><br>
+        <div id="div_estoque">
+            <form name="estoque" method="POST" action="" id="form_estoque"><br>
                 <label>Código do movimento: </label>
-                <input type="number" name="codigo_movimento" id="input_codigo_movimento"><br><br>
+                <input type="number" name="cod_movto" id="cod_mvto"><br><br>
                 <label>Data do movimento: </label>
-                <input type="date" name="data_movimento" id="input_data_movimento"><br><br>
+                <input type="date" name="data_mvto" id="data_mvto"><br><br>
                 <label>Tipo: </label>
-                <select id="tipo">
-                    <option value="entrada">Entrada</option>
-                    <option value="saida">Saída</option>
+                <select id="tipo" name="tipo">
+                    <option value="Entrada">Entrada</option>
+                    <option value="Saida">Saida</option>
                 </select><br><br>
                 <label>Código do produto: </label>
-                <input type="number" name="codigo_produto" id="input_codigo_produto"><br><br>
-                <input type="button" name="enviar" value="Enviar" id="button_enviar">
+                <input type="number" name="cod_prod" id="cod_prod"><br><br>
+                <input type="button" name="enviar" value="Enviar" id="button_enviar" onclick="inserir();"><br>
             </form>
         </div>
+
+        <script src="js/estoque.js"></script>
     </body>
 </html>
