@@ -1,4 +1,4 @@
-//insere informações na tabela produtos
+// Insere informações na tabela produtos
 function inserir(){
     var dados = $('#form_produto').serialize();
     $.ajax({

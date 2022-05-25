@@ -31,18 +31,14 @@ li a {
 li a:hover {
     color: gray;
 }
-div table {
+table {
     width: 50%;
     margin: 1% auto;
 }
 th, td {
     text-align: center;
-}
-th:hover {
-    color: black;
-}
-td:hover {
-    color: grey;
+    border-style: solid;
+    padding: 1px;
 }
 table, th, td {
     color: black;
@@ -50,9 +46,11 @@ table, th, td {
     border-color: black;
     border-collapse: collapse;
 }
-th, td {
-    border-style: solid;
-    padding: 1px;
+th:hover {
+    color: black;
+}
+td:hover {
+    color: grey;
 }
 tbody {
     color: black;

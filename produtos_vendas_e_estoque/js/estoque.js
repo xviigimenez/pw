@@ -1,4 +1,4 @@
-//insere informações na tabela estoque
+// Insere informações na tabela estoque
 function inserir(){
     var dados = $('#form_estoque').serialize();
     console.log(dados);

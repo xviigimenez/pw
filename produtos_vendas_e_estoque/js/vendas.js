@@ -1,4 +1,4 @@
-//insere informações na tabela de vendas
+// Insere informações na tabela de vendas
 function inserir(){
     var dados = $('#form_venda').serialize();
     $.ajax({

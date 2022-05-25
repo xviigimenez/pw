@@ -1,4 +1,4 @@
-//consulta as informações na tabela produtos
+// Consulta as informações na tabela produtos
 $(document).ready(function() {
     $.ajax({
         method: 'POST',

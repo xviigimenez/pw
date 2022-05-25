@@ -1,4 +1,4 @@
-//login do usuário
+// Login do usuário
 function log_in(){
     var dados = $('#form_login').serialize();
     $.ajax({
