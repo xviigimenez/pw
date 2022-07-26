@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: Bauhaus;
+    src: url(BAUHAUS4.TTF);
+    src: url(BAUHAUS4.woff);
+}
+h1{
+    font-size: 100px;
+    font-family: Bauhaus;
+    text-decoration: underline;
+}
+h2{
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+body{
+    text-align: center;
+    background-image: url(minions2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #ffd763;
+}
+div table {
+    width: 50%;
+    margin: 1% auto;
+    font-size: 20px;
+}
+th, td {
+    text-align: center;
+}
+th:hover {
+    color: black;
+}
+td:hover {
+    color: grey;
+}
+table, th, td {
+    color: black;
+	border: 3px;
+    border-color: black;
+    border-collapse: collapse;
+}
+th, td {
+    border-style: solid;
+    padding: 1px;
+}
+#formulario{
+    background-color: #f5e050;
+    border: 2px black double;
+    text-align: center;
+    margin: 5% 38% 0 38%;
+    padding: 1% 0 1% 0;
+    font-size: 20px;
+}
+#formulario input,select{
+    font-size: 15px;
+}
+#formulario input{
+    width: 100px;
+}
+#formulario input[type=date]{
+    width: 130px;
+}
+#formulario input[type=radio]{
+    height: 15px;
+    width: 15px;
+}
+#botoes{
+    margin: 15% 0 0 0;
+}
+#botoes input{
+    width: 350px;
+    height: 200px;
+    font-size: 55px;
+    margin-left: 50px;
+    cursor: pointer;
+    background-color: #f5e050;
+    border-radius: 10px;
+    font-family: 'Anton', sans-serif;
+}
+#tipo{
+    margin-right: 50px;
+}
+#cliente{
+    font-size: 20px;
+}
+#cliente input{
+    height: 15px;
+    width: 15px;
+}
+#servico{
+    font-size: 20px;
+}
+#servico_option{
+    font-size: 20px;
+}
+#servico input{
+    font-size: 15px;
+}
+#voltar, button, #incluir, #excluir, #relatorio{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #0723A3;
+    color: white;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+}
+#incluir[value='Incluir'], #excluir[value='Excluir'], #relatorio[value='Relatórios']{
+    font-size: 20px;
+    margin-top: 0;
+    height: 35px;
+}
