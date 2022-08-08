@@ -1,0 +1,32 @@
+body {
+  height: 100%;
+  margin: 10%;
+}
+body header h1 {
+  font-size: 12rem;
+}
+body header h1 a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+body header h1 a:hover {
+  color: grey;
+  transition: 0.5s;
+}
+body main article h1 {
+  font-size: 3rem;
+}
+body footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+body footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
