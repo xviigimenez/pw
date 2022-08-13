@@ -4,7 +4,7 @@ body {
 }
 body header {
   height: 25vh;
-  margin: 5% 10% 5% 10%;
+  margin: 5% 10% 0 10%;
 }
 body header h1 {
   cursor: default;
@@ -33,7 +33,6 @@ body main div {
 body main div label {
   font-size: 2vw;
   font-weight: bold;
-  padding: 5rem 0 5rem 0;
   transition: 0.5s;
 }
 body main div label:hover {
@@ -53,8 +52,12 @@ body main div input:hover {
   width: 15vw;
   transition: 1s;
 }
+body main div p {
+  font-size: 3vw;
+}
 body footer {
   height: 25vh;
+  margin: 5% 10% 0 10%;
   text-align: center;
 }
 body footer div {

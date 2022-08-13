@@ -3,7 +3,7 @@ body {
     width: 100vw;
     header {
         height: 25vh;
-        margin: 5% 10% 5% 10%;
+        margin: 5% 10% 0 10%;
         h1 {
             cursor: default;
             margin-top: 0;
@@ -30,7 +30,6 @@ body {
             label {
                 font-size: 2vw;
                 font-weight: bold;
-                padding: 5rem 0 5rem 0;
                 transition: .5s;
                 &:hover {
                     color: grey;
@@ -50,10 +49,14 @@ body {
                     transition: 1s;
                 }
             }
+            p {
+                font-size: 3vw;
+            }
         }
     }
     footer {
         height: 25vh;
+        margin: 5% 10% 0 10%;
         text-align: center;
         div {
             height: 100%;
