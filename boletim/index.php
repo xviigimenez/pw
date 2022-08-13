@@ -12,16 +12,21 @@
         </header>
         <main>
             <div>
-                <label>Matrícula</label>
-                <input type="number" name="matricula">
-                <label>Nome</label>
-                <input type="text" name="nome">
-                <label>Nota 1</label>
-                <input type="number" name="nota1">
-                <label>Nota 2</label>
-                <input type="number" name="nota2">
-                <label>Nota 3</label>
-                <input type="number" name="nota3">
+                <label for="matricula">Matrícula</label>
+                <input type="number" id="matricula">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+                <label for="nota1">Nota 1</label>
+                <input type="number" id="nota1">
+                <label for="nota2">Nota 2</label>
+                <input type="number" id="nota2">
+                <label for="nota3">Nota 3</label>
+                <input type="number" id="nota3">
+            </div>
+            <div>
+                <?php
+                    /* print "<p>Média: </p>"; */
+                ?>
             </div>
         </main>
         <footer>
