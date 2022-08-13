@@ -17,11 +17,11 @@
                 <label for="nome">Nome</label>
                 <input type="text" id="nome">
                 <label for="nota1">Nota 1</label>
-                <input type="number" id="nota1">
+                <input type="number" min="0" max="10" step=".5" id="nota1">
                 <label for="nota2">Nota 2</label>
-                <input type="number" id="nota2">
+                <input type="number" min="0" max="10" step=".5" id="nota2">
                 <label for="nota3">Nota 3</label>
-                <input type="number" id="nota3">
+                <input type="number" min="0" max="10" step=".5" id="nota3">
             </div>
             <div>
                 <?php
