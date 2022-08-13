@@ -1,41 +1,80 @@
 body {
-    height: 100%;
-    margin: 10%;
+    height: 75vh;
+    width: 100vw;
     header {
+        height: 25vh;
+        margin: 5% 10% 5% 10%;
         h1 {
-            font-size: 12rem;
-            a {
-                text-decoration: none;
-                color: black;
+            cursor: default;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 8vw;
+            color: black;
+            transition: .5s;
+            &:hover {
+                color: grey;
                 transition: .5s;
-                &:hover {
-                    color: grey;
-                    transition: .5s;
-                }
+                font-size: 10vw
             }
         }
     }
     main {
-        article {
-            h1 {
-                font-size: 3rem;
-            }
-        }
-    }
-    footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
+        height: 25vh;
         div {
-            // top right bottom left
-            //margin: 5% 2.5% 0 2.5%;
+            height: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            transition: 3s;
+            label {
+                font-size: 2vw;
+                font-weight: bold;
+                padding: 5rem 0 5rem 0;
+                transition: .5s;
+                &:hover {
+                    color: grey;
+                    font-size: 2.1vw;
+                    transition: .5s;
+                }
+            }
+            input {
+                margin-left: 1vw;
+                margin-right: 2vw;
+                margin-top: .5vh;
+                width: 7.5vw;
+                height: 2.5vh;
+                transition: 1s;
+                &:hover {
+                    width: 15vw;
+                    transition: 1s;
+                }
+            }
         }
     }
-
+    footer {
+        height: 25vh;
+        text-align: center;
+        div {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            p {
+                    color: black;
+                    font-size: 1.5vw;
+                    font-weight: bold;
+                a {
+                    color: blue;
+                    text-decoration: none;
+                    transition: .5s;
+                    &:hover {
+                        font-size: 1.8vw;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
 }
