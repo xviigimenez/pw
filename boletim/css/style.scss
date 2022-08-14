@@ -1,0 +1,102 @@
+body {
+	height: 75vh;
+	width: 99vw;
+	header {
+		height: 25vh;
+		margin: 5% 10% 0 10%;
+		h1 {
+			cursor: default;
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 8vw;
+			color: black;
+			transition: 0.5s;
+			&:hover {
+				color: grey;
+				transition: 0.5s;
+				font-size: 10vw;
+			}
+		}
+	}
+	main {
+		height: 25vh;
+		div {
+			form {
+				&:not(:last-child) {
+					height: 100%;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					transition: 3s;
+				}
+				&:last-child {
+					text-align: center;
+				}
+				label {
+					font-size: 2vw;
+					font-weight: bold;
+					transition: 0.5s;
+					&:hover {
+						color: grey;
+						font-size: 2.1vw;
+						transition: 0.5s;
+					}
+				}
+				input[type=number] {
+					margin-left: 1vw;
+					margin-right: 2vw;
+					margin-top: 0.5vh;
+					width: 7.5vw;
+					height: 2.5vh;
+					transition: 1s;
+					&:hover {
+						width: 15vw;
+						transition: 1s;
+					}
+				}
+                input[type=text] {
+                    margin-left: 1vw;
+                    margin-right: 2vw;
+                    margin-top: 0.5vh;
+                    width: 7.5vw;
+                    height: 2.5vh;
+                    transition: 1s;
+                    &:hover {
+                        width: 15vw;
+                        transition: 1s;
+                    }
+                }
+				p {
+					font-size: 3vw;
+				}
+			}
+		}
+	}
+	footer {
+		height: 25vh;
+		margin: 5% 10% 0 10%;
+		text-align: center;
+		div {
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			p {
+				color: black;
+				font-size: 1.5vw;
+				font-weight: bold;
+				a {
+					color: blue;
+					text-decoration: none;
+					transition: 0.5s;
+					&:hover {
+						font-size: 1.8vw;
+						transition: 0.5s;
+					}
+				}
+			}
+		}
+	}
+}
