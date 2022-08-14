@@ -13,8 +13,8 @@ $vlBoletim->setNota3($_POST['nota3']);
 
 echo "** BOLETIM ** <br>";
 echo "Matricula: " . $matricula . " | ";
-echo "Aluno: " . $aluno . "<br>";
+echo "Aluno: " . $aluno . ".<br>";
 echo "com notas " . $vlBoletim->getNota1() . ", " . $vlBoletim->getNota2() . ", " . $vlBoletim->getNota3() . ".<br>";
-echo "Ficou com media " . $vlBoletim->gerarBoletim() . "<br>";
-echo "Situação " . $vlBoletim->getSituacao();
+echo "Ficou com média: " . $vlBoletim->gerarBoletim() . ".<br>";
+echo "Situação: " . $vlBoletim->getSituacao() . ".";
 ?>
