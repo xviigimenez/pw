@@ -1,6 +1,7 @@
 body {
   height: 75vh;
   width: 99vw;
+  font-family: sans-serif;
 }
 body header {
   height: 25vh;
@@ -22,7 +23,7 @@ body header h1:hover {
 body main {
   height: 25vh;
 }
-body main div form:not(:last-child){
+body main div form:not(:last-child) {
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -30,7 +31,7 @@ body main div form:not(:last-child){
   align-items: center;
   transition: 3s;
 }
-body main div form:last-child{
+body main div form:last-child {
   text-align: center;
 }
 body main div form label {
@@ -43,7 +44,7 @@ body main div form label:hover {
   font-size: 2.1vw;
   transition: 0.5s;
 }
-body main div form input[type=number], input[type=text] {
+body main div form input[type=number], body main div form input[type=text] {
   margin-left: 1vw;
   margin-right: 2vw;
   margin-top: 0.5vh;
@@ -51,16 +52,31 @@ body main div form input[type=number], input[type=text] {
   height: 2.5vh;
   transition: 1s;
 }
-body main div form input[type=number]:hover, input[type=text]:hover {
+body main div form input[type=number]:hover, body main div form input[type=text]:hover {
   width: 15vw;
   transition: 1s;
 }
 body main div form p {
   font-size: 3vw;
 }
+body main div table {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main div table td {
+  text-align: center;
+  border: 0.5vh solid black;
+  padding: 0.5vh;
+}
+body main div table td span {
+  font-weight: bold;
+}
 body footer {
   height: 25vh;
-  margin: 5% 10% 0 10%;
+  margin: 0 10% 0 10%;
   text-align: center;
 }
 body footer div {
@@ -83,4 +99,4 @@ body footer div p a {
 body footer div p a:hover {
   font-size: 1.8vw;
   transition: 0.5s;
-}
+}/*# sourceMappingURL=style.css.map */

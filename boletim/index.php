@@ -30,7 +30,7 @@
         </main>
         <footer>
         <div>
-            <p>Esta página foi criada por <a href="mailto:gustavo.correa38@etec.sp.gov.br">Gustavo Gimenez Correa</a> e <a href="mailto:gabriel.daloco@etec.sp.gov.br">Gabriel Rangel Maciel Daloco</a>.</p>
+        <p>Esta página foi criada por <a target="_blank" href="https://github.com/xviigimenez/">Gustavo Gimenez Correa</a> e <a target="_blank" href="https://github.com/GabrielDaloco">Gabriel Rangel Maciel Daloco</a>.</p>
         </div>
         </footer>
     </body>

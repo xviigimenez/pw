@@ -1,6 +1,7 @@
 body {
 	height: 75vh;
 	width: 99vw;
+	font-family: sans-serif;
 	header {
 		height: 25vh;
 		margin: 5% 10% 0 10%;
@@ -43,7 +44,7 @@ body {
 						transition: 0.5s;
 					}
 				}
-				input[type=number] {
+				input[type=number], input[type="text"] {
 					margin-left: 1vw;
 					margin-right: 2vw;
 					margin-top: 0.5vh;
@@ -55,27 +56,30 @@ body {
 						transition: 1s;
 					}
 				}
-                input[type=text] {
-                    margin-left: 1vw;
-                    margin-right: 2vw;
-                    margin-top: 0.5vh;
-                    width: 7.5vw;
-                    height: 2.5vh;
-                    transition: 1s;
-                    &:hover {
-                        width: 15vw;
-                        transition: 1s;
-                    }
-                }
 				p {
 					font-size: 3vw;
+				}
+			}
+			table {
+				height: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				td {
+					text-align: center;
+					border: .5vh solid black;
+					padding: .5vh;
+					span {
+						font-weight: bold;
+					}
 				}
 			}
 		}
 	}
 	footer {
 		height: 25vh;
-		margin: 5% 10% 0 10%;
+		margin: 0 10% 0 10%;
 		text-align: center;
 		div {
 			height: 100%;
