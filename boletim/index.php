@@ -23,7 +23,6 @@
                     <input type="number" min="0" max="10" step=".5" id="nota2" name="nota2">
                     <label for="nota3">Nota 3</label>
                     <input type="number" min="0" max="10" step=".5" id="nota3" name="nota3"><br><br>
-
                     <input type="submit" name="Receber" value="Receber">
                 </form>
             </div>

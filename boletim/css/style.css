@@ -1,11 +1,12 @@
 body {
   height: 75vh;
   width: 99vw;
-  font-family: sans-serif;
+  font-family: Liberation Sans, sans-serif;
 }
 body header {
   height: 25vh;
   margin: 5% 10% 0 10%;
+  padding: 0 0 5% 0;
 }
 body header h1 {
   cursor: default;
@@ -22,6 +23,9 @@ body header h1:hover {
 }
 body main {
   height: 25vh;
+}
+body main div form p {
+  font-size: 3vw;
 }
 body main div form:not(:last-child) {
   height: 100%;
@@ -47,7 +51,6 @@ body main div form label:hover {
 body main div form input[type=number], body main div form input[type=text] {
   margin-left: 1vw;
   margin-right: 2vw;
-  margin-top: 0.5vh;
   width: 7.5vw;
   height: 2.5vh;
   transition: 1s;
@@ -55,9 +58,6 @@ body main div form input[type=number], body main div form input[type=text] {
 body main div form input[type=number]:hover, body main div form input[type=text]:hover {
   width: 15vw;
   transition: 1s;
-}
-body main div form p {
-  font-size: 3vw;
 }
 body main div table {
   height: 100%;
@@ -99,4 +99,4 @@ body footer div p a {
 body footer div p a:hover {
   font-size: 1.8vw;
   transition: 0.5s;
-}/*# sourceMappingURL=style.css.map */
+}
