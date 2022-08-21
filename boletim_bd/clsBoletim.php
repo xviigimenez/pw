@@ -1,10 +1,24 @@
 <?php
 class clsBoletim{
+    private $nome;
+    private $matricula;
     private $nota1;
     private $nota2;
     private $nota3;
     private $situacao;
 
+    public function getNome(){
+        return $this->nome;
+    }
+    public function setNome($nom){
+        $this->nome = $nom;
+    }
+    public function getMatricula(){
+        return $this->matricula;
+    }
+    public function setMatricula($matri){
+        $this->matricula = $matri;
+    }
     public function getNota1(){
         return $this->nota1;
     }
@@ -43,6 +57,59 @@ class clsBoletim{
         }
 
         return $media;
+    }
+
+    public function incluir(){
+        include 'conexao.php';
+
+		$insert = $conexao->prepare("insert into aluno(matricula, nome, nota_1, nota_2, nota_3) values (?, ?, ?, ?, ?)");
+		$insert->bindValue(1, $this->matricula);
+		$insert->bindValue(2, $this->nome);
+		$insert->bindValue(3, $this->nota1);
+		$insert->bindValue(4, $this->nota2);
+        $insert->bindValue(5, $this->nota3);
+
+		$resultado = $insert->execute();
+
+		if($resultado){
+			$retorno = "cadastrou";
+		}else{
+			$retorno = "não cadastrou";
+		}
+
+        return $retorno;
+    }
+
+    public function excluir(){
+        include 'conexao.php';
+
+		$delete = $conexao->prepare("delete from aluno where matricula = ?");
+		$delete->bindValue(1, $this->matricula);
+
+		$resultado = $delete->execute();
+
+		if($resultado){
+			$retorno = "excluido";
+		}else{
+			$retorno = "não excluido";
+		}
+
+        return $retorno;
+    }
+
+    public function pesquisa(){
+        include 'conexao.php';
+
+        $pesquisa = $conexao->prepare("select * from aluno");
+        $pesquisa->execute();
+
+        if($pesquisa->rowCount() > 0){
+            $resultado = $pesquisa->fetchAll();
+         }
+        else{
+            $resultado = "não funcionou";
+        }
+        return $resultado;
     }
 }
 ?>

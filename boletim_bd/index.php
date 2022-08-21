@@ -23,9 +23,9 @@
                     <input type="number" min="0" max="10" step=".5" id="nota2" name="nota2">
                     <label for="nota3">Nota 3</label>
                     <input type="number" min="0" max="10" step=".5" id="nota3" name="nota3"><br><br>
-                    <input type="submit" name="Incluir" value="Incluir">
-                    <input type="submit" name="Excluir" value="Excluir">
-                    <input type="submit" name="Pesquisar" value="Pesquisar">
+                    <input type="submit" name="enviar" value="Incluir">
+                    <input type="submit" name="enviar" value="Excluir">
+                    <input type="submit" name="enviar" value="Pesquisar">
                 </form>
             </div>
         </main>
