@@ -1,11 +1,10 @@
 body {
-	height: 75vh;
+	height: minmax(75vh, 100vh);
 	width: 99vw;
 	font-family: Liberation Sans, sans-serif;
 	header {
 		height: 25vh;
 		margin: 5% 10% 0 10%;
-        padding: 0 0 5% 0;
 		h1 {
 			cursor: default;
 			margin-top: 0;
@@ -21,7 +20,8 @@ body {
 		}
 	}
 	main {
-		height: 25vh;
+		height: 30vh;
+        padding: 2.5% 0 2.5% 0;
 		div {
 			form {
 				p {
@@ -68,18 +68,32 @@ body {
 				justify-content: center;
 				align-items: center;
 				td {
+                    font-size: 1.5vw;
 					text-align: center;
 					border: .5vh solid black;
-					padding: .5vh;
+					padding: 1vh;
+                    transition: 1s;
+                    &:hover {
+                        font-size: 2vw;
+                        padding: 3vh;
+                        transition: 1s;
+                    }
 					span {
+                        color: black;
 						font-weight: bold;
+                        transition: 1s;
+                        &:hover {
+                            color: grey;
+                            font-size: 2vw;
+                            transition: 1s;
+                        }
 					}
 				}
 			}
 		}
 	}
 	footer {
-		height: 25vh;
+		height: 20vh;
 		margin: 0 10% 0 10%;
 		text-align: center;
 		div {

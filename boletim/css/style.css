@@ -1,12 +1,11 @@
 body {
-  height: 75vh;
+  height: minmax(75vh, 100vh);
   width: 99vw;
   font-family: Liberation Sans, sans-serif;
 }
 body header {
   height: 25vh;
   margin: 5% 10% 0 10%;
-  padding: 0 0 5% 0;
 }
 body header h1 {
   cursor: default;
@@ -22,7 +21,8 @@ body header h1:hover {
   font-size: 10vw;
 }
 body main {
-  height: 25vh;
+  height: 30vh;
+  padding: 2.5% 0 2.5% 0;
 }
 body main div form p {
   font-size: 3vw;
@@ -67,15 +67,29 @@ body main div table {
   align-items: center;
 }
 body main div table td {
+  font-size: 1.5vw;
   text-align: center;
   border: 0.5vh solid black;
-  padding: 0.5vh;
+  padding: 1vh;
+  transition: 1s;
+}
+body main div table td:hover {
+  font-size: 2vw;
+  padding: 3vh;
+  transition: 1s;
 }
 body main div table td span {
+  color: black;
   font-weight: bold;
+  transition: 1s;
+}
+body main div table td span:hover {
+  color: grey;
+  font-size: 2vw;
+  transition: 1s;
 }
 body footer {
-  height: 25vh;
+  height: 20vh;
   margin: 0 10% 0 10%;
   text-align: center;
 }
