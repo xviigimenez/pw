@@ -8,3 +8,6 @@ CREATE TABLE aluno (
   nota_2 float(3,1) NOT NULL,
   nota_3 float(3,1) NOT NULL
 );
+
+insert into aluno (nome , nota_1, nota_2, nota_3) values ('Gimas', '3', '4', '1');
+insert into aluno (nome , nota_1, nota_2, nota_3) values ('Rangel', '9', '10', '8');
