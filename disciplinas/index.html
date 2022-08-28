@@ -3,23 +3,34 @@
         <title>Disciplinas</title>
         <meta charset='utf-8'>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- <link rel="icon" type="image/x-icon" href="css/favicon.ico"> -->
     </head>
-    <body>
+    <body onload="periodo();">
         <h1>Disciplina</h1>
         <div>
             <label for="periodo">Período</label>
-            <select name="periodo" id="periodo">
-                <option value="periodo1">Período 1</option>
-            </select>
+            <select name="periodo" id="periodo" onchange="curso();">
+                <option value="escolha">Escolha</option>
+            </select><br>
+
             <label for="curso">Curso</label>
-            <select name="curso" id="curso">
-                <option value="curso1">Curso 1</option>
-            </select>
+            <select name="curso" id="curso" onchange="disciplina();">
+                <option value="escolha">Escolha</option>
+            </select><br>
+            
             <label for="disciplina">Disciplina</label>
             <select name="disciplina" id="disciplina">
-                <option value="disciplina1">Disciplina 1</option>
-            </select>
+                <option value="escolha">Escolha</option>
+            </select><br>
         </div>
+
+        <footer>
+            <div>
+                <p>Esta página foi criada por <a target="_blank" href="https://github.com/xviigimenez/">Gustavo Gimenez Correa</a> e <a target="_blank" href="https://github.com/GabrielDaloco">Gabriel Rangel Maciel Daloco</a>.</p>
+            </div>
+        </footer>
+
+        <script src="js/disciplinas.js"></script>
     </body>
 </html>
