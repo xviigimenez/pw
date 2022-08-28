@@ -1,6 +1,12 @@
+@font-face {
+    font-family: liberation-sans;
+    src: url(../font/liberation-sans/LiberationSans-Regular.ttf);
+}
+
 body {
     width: 100%;
     height: 100%;
+    font-family: liberation-sans;
     div {
         display: flex;
         align-items: center;
