@@ -1,0 +1,61 @@
+@font-face {
+  font-family: optimus_princeps;
+  src: url(../font/optimusprinceps/OptimusPrincepsSemiBold.ttf);
+}
+@font-face {
+  font-family: ellfield;
+  src: url(../font/ellfield/ELLFIELD.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body header {
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header a {
+  text-decoration: none;
+}
+body header .logo h1 {
+  font-family: optimus_princeps;
+  font-size: 3em;
+  margin: 0;
+  padding: 1vh 1vw 1vh 1vw;
+}
+body header .logo h1 a {
+  color: white;
+}
+body header .nav nav {
+  padding: 0;
+}
+body header .nav nav ul {
+  margin: 0;
+  list-style: none;
+}
+body header .nav nav ul li {
+  display: inline-block;
+}
+body header .nav nav ul li a {
+  padding: 0 1vw 0 1vw;
+  font-family: future_mood;
+  font-size: 34px;
+  color: grey;
+  font-family: ellfield;
+  font-size: 1.5em;
+}
+body main {
+  height: 70%;
+}
+body main .carrossel img {
+  width: 100%;
+  height: 100%;
+}
+body footer {
+  height: 10%;
+}/*# sourceMappingURL=style.css.map */
