@@ -25,7 +25,34 @@
             </div>
             <div class="cards">
                 <div class="card">
-                    <!-- Usando o caminho do arquivo por enquanto apenas por demonstração -->
+                    <img src="../imagens/charutos_cubanos.jpg" alt="Charutos cubanos">
+                    <div class="container">
+                        <h4><b>Charuto cubano</b></h4>
+                        <p>Uma caixa de charutos vindos diretamente de Havana.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../imagens/charutos_cubanos.jpg" alt="Charutos cubanos">
+                    <div class="container">
+                        <h4><b>Charuto cubano</b></h4>
+                        <p>Uma caixa de charutos vindos diretamente de Havana.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../imagens/charutos_cubanos.jpg" alt="Charutos cubanos">
+                    <div class="container">
+                        <h4><b>Charuto cubano</b></h4>
+                        <p>Uma caixa de charutos vindos diretamente de Havana.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../imagens/charutos_cubanos.jpg" alt="Charutos cubanos">
+                    <div class="container">
+                        <h4><b>Charuto cubano</b></h4>
+                        <p>Uma caixa de charutos vindos diretamente de Havana.</p>
+                    </div>
+                </div>
+                <div class="card">
                     <img src="../imagens/charutos_cubanos.jpg" alt="Charutos cubanos">
                     <div class="container">
                         <h4><b>Charuto cubano</b></h4>
