@@ -9,6 +9,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   height: 100%;
 }
 body header {
@@ -80,6 +81,17 @@ body main .cards .card:hover {
 body main .cards .card .container {
   background-color: brown;
   padding: 2px 16px;
+}
+body main .cadastro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .cadastro form {
+  background-image: url("/pw/loja_virtual/imagens/charutos_cubanos.jpg");
+  background-repeat: no-repeat;
 }
 body footer {
   width: 100%;
