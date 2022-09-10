@@ -38,11 +38,11 @@
                 </tbody>
             </table>
             <form name="cliente">
-                <label>Nome</label><br>
+                <label for="nome">Nome</label><br>
 		        <input type="text" name="nome" id="nome" placeholder="marselo"><br><br>
-                <label>Email</label><br>
+                <label for="email   ">Email</label><br>
 		        <input type="text" name="email" id="email" placeholder="ronaldo@fenomeno.com"><br><br>
-                <label>Senha</label><br>
+                <label for="senha">Senha</label><br>
 		        <input type="password" name="senha" id="senha"><br><br>
                 <div>			        
                     <input type="button" name="cadastrar" value="Cadastrar">

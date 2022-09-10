@@ -38,13 +38,13 @@
                 </tbody>
             </table>
             <form name="produto">
-                <label>Produto</label><br>
+                <label for="produto">Produto</label><br>
 		        <input type="text" name="produto" id="produto" placeholder="Charutos cubanos"><br><br>
-                <label>Preço</label><br>
+                <label ="preco">Preço</label><br>
 		        <input type="number" name="preco" id="preco" placeholder="100"><br><br>
-                <label>Descrição</label><br>
+                <label for="descricao">Descrição</label><br>
 		        <input type="text" name="descricao" id="descricao" placeholder="Escreva aqui sobre o produto..."><br><br>
-                <label>Foto</label>
+                <label for="foto">Foto</label>
                 <input type="file" id="foto" name="foto"><br><br>
                 <div>			        
                     <input type="button" name="cadastrar" value="Cadastrar">
