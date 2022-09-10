@@ -21,34 +21,38 @@
             </div>
         </header>
         <main>
-            <table>
-                <thead>
-                    <tr>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                    </tr>
-                </tbody>
-            </table>
-            <form name="cliente">
-                <label for="nome">Nome</label><br>
-		        <input type="text" name="nome" id="nome" placeholder="marselo"><br><br>
-                <label for="email   ">Email</label><br>
-		        <input type="text" name="email" id="email" placeholder="ronaldo@fenomeno.com"><br><br>
-                <label for="senha">Senha</label><br>
-		        <input type="password" name="senha" id="senha"><br><br>
-                <div>			        
-                    <input type="button" name="cadastrar" value="Cadastrar">
-			        <input type="button" name="apagar" value="Apagar">
-		        </div>
-            </form>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form">
+                <form name="cliente">
+                    <label for="nome">Nome</label><br>
+		            <input type="text" name="nome" id="nome" placeholder="marselo"><br><br>
+                    <label for="email   ">Email</label><br>
+		            <input type="text" name="email" id="email" placeholder="ronaldo@fenomeno.com"><br><br>
+                    <label for="senha">Senha</label><br>
+		            <input type="password" name="senha" id="senha"><br><br>
+                    <div>			        
+                        <input type="button" name="cadastrar" value="Cadastrar">
+			            <input type="button" name="apagar" value="Apagar">
+		            </div>
+                </form>
+            </div>
         </main>
         <footer>
             <p>Esta página foi criada por <a target="_blank" href="https://github.com/xviigimenez/">Gustavo Gimenez Correa</a> e <a target="_blank" href="https://github.com/GabrielDaloco">Gabriel Rangel Maciel Daloco</a>.</p>
