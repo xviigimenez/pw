@@ -1,1 +1,30 @@
-
+body header a {
+  text-decoration: none;
+}
+body header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body header nav ul li {
+  display: inline;
+}
+body footer {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+}
+body footer p {
+  text-align: center;
+  padding: 2.5vh 0 2.5vh 0;
+  color: black;
+  margin: 0;
+}
+body footer p a {
+  color: blue;
+  text-decoration: none;
+  transition: 0.3s;
+}
+body footer p a:hover {
+  color: grey;
+}

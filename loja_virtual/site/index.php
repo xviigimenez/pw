@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>J&R - Jimas & Rangel</title>
+        <title>J&R - Início</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="icon" type="image/x-icon" href="css/favicon.ico">
