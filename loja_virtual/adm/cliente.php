@@ -3,6 +3,7 @@
     <head>
         <title>J&R - Cliente</title>
         <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" type="image/x-icon" href="css/favicon.ico">
     </head>
@@ -40,7 +41,9 @@
                 </table>
             </div>
             <div class="form">
-                <form name="cliente">
+                <form name="cliente" action="" method="POST" id="frm_cliente">
+                    <label for="cpf">CPF</label><br>
+		            <input type="text" name="cpf" id="cpf" placeholder="312.643.231-00"><br><br>
                     <label for="nome">Nome</label><br>
 		            <input type="text" name="nome" id="nome" placeholder="marselo"><br><br>
                     <label for="email   ">Email</label><br>
@@ -48,14 +51,28 @@
                     <label for="senha">Senha</label><br>
 		            <input type="password" name="senha" id="senha"><br><br>
                     <div>			        
-                        <input type="button" name="cadastrar" value="Cadastrar">
-			            <input type="button" name="apagar" value="Apagar">
+                        <input type="button" name="botao" value="Cadastrar" onclick="cadastrarCliente()">
+			            <input type="button" name="botao" value="Apagar" onclick="apagarCliente()">
+                        <input type="button" name="botao" value="Consultar" onclick="consultarCliente()">
 		            </div>
                 </form>
+            </div>
+            <div>
+                <h2>Consulta</h2>
+                <table border="1" id="consulta">
+                    <tr>
+                        <th>Cpf</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Senha</th>
+                    </tr>
+                </table>
             </div>
         </main>
         <footer>
             <p>Esta página foi criada por <a target="_blank" href="https://github.com/xviigimenez/">Gustavo Gimenez Correa</a> e <a target="_blank" href="https://github.com/GabrielDaloco">Gabriel Rangel Maciel Daloco</a>.</p>
         </footer>
+    
+        <script src="js/eventos.js"></script>
     </body>
 </html>

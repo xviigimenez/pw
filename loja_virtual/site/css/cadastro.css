@@ -6,11 +6,14 @@
   font-family: ellfield;
   src: url(../font/ellfield/ELLFIELD.ttf);
 }
+html, body{
+  margin: 0;
+  padding: 0;
+}
 html {
   width: 100%;
   height: 100%;
 }
-
 body {
   width: 100%;
   height: 100%;
