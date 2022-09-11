@@ -1,33 +1,31 @@
 @import "fonts.scss";
-
 html {
-    width: 100%;
-    height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
 }
-
 body {
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/banner.jpg");
-    background-repeat: no-repeat;
-    // flexbox
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    a {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    .cadastro {
-        // width: 75%;
-        // height: 75%;
-        background-color: white;
-        border-radius: 25px;
-        padding: 5vh 2.5vw 5vh 2.5vw;
-        // flexbox
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/banner.jpg");
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	a {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.cadastro {
+		background-color: white;
+		border-radius: 25px;
+		padding: 5vh 2.5vw 5vh 2.5vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }

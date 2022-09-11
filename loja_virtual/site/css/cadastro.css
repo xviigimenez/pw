@@ -6,15 +6,16 @@
   font-family: ellfield;
   src: url(../font/ellfield/ELLFIELD.ttf);
 }
-html, body{
+html {
   margin: 0;
   padding: 0;
-}
-html {
   width: 100%;
   height: 100%;
 }
+
 body {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   background-image: url("../img/banner.jpg");
@@ -35,4 +36,4 @@ body .cadastro {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}/*# sourceMappingURL=cadastro.css.map */

@@ -1,39 +1,36 @@
 body {
-    header {
-        a {
-            text-decoration: none;
-        }
-        nav {
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                li {
-                    display: inline;
-                }
-            }
-        }
-    }
-    main {
-    }
-    footer {
-        width: 100%;
-        height: 10%;
-        background-color: white;
-        p {
-            text-align: center;
-            padding: 2.5vh 0 2.5vh 0;
-            color: black;
-            margin: 0;
-            a {
-                color: blue;
-                text-decoration: none;
-                // Aparentemente não é necessário definir o "transition" novamente no :hover
-                transition: .3s;
-                &:hover {
-                    color: grey;
-                }
-            }
-        }
-    }
+	header {
+		a {
+			text-decoration: none;
+		}
+		nav {
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				li {
+					display: inline;
+				}
+			}
+		}
+	}
+	footer {
+		width: 100%;
+		height: 10%;
+		background-color: white;
+		p {
+			text-align: center;
+			padding: 2.5vh 0 2.5vh 0;
+			color: black;
+			margin: 0;
+			a {
+				color: blue;
+				text-decoration: none;
+				transition: 0.3s;
+				&:hover {
+					color: grey;
+				}
+			}
+		}
+	}
 }
