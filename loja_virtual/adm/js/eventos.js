@@ -1,9 +1,13 @@
 function cadastrarCliente(){
-    var dados = $('#frm_cliente').serialize();
+    var dados = new FormData($('#frm_cliente')[0]);
+    dados.append('botao', 'Cadastrar');
+
     $.ajax({
         method: 'POST',
         url: 'php/controle_cliente.php',
-        data: dados
+        data: dados,
+        processData: false,
+        contentType: false
     })
 
     .done(function(msg){
@@ -17,11 +21,15 @@ function cadastrarCliente(){
 }
 
 function apagarCliente(){
-    var dados = $('#frm_cliente').serialize();
+    var dados = new FormData($('#frm_cliente')[0]);
+    dados.append('botao', 'Apagar');
+
     $.ajax({
         method: 'POST',
         url: 'php/controle_cliente.php',
-        data: dados
+        data: dados,
+        processData: false,
+        contentType: false
     })
 
     .done(function(msg){
@@ -32,25 +40,34 @@ function apagarCliente(){
 }
 
 function consultarCliente(){
-    var dados = $('#frm_cliente').serialize();
+    var dados = new FormData($('#frm_cliente')[0]);
+    dados.append('botao', 'Consultar');
+
     $.ajax({
         method: 'POST',
         url: 'php/controle_cliente.php',
-        data: dados
+        data: dados,
+        processData: false,
+        contentType: false
     })
 
     .done(function(msg){
-        var desempacotado = JSON.parse(msg);
+        if(msg.slice(0,3) == 'Pel'){
+            alert(msg);
+        }else{
+            $('td').remove();
+            var desempacotado = JSON.parse(msg);
         
-        for(var i = 0; i <= desempacotado.length; i++)
-        {
-            bloco =     "<tr>"
-            bloco +=    "<td>" + desempacotado[i].cpf + "</td>";
-            bloco +=    "<td>" + desempacotado[i].nome + "</td>";
-            bloco +=    "<td>" + desempacotado[i].email + "</td>";
-            bloco +=    "<td>" + desempacotado[i].senha + "</td>";
-            bloco +=    "</tr>"
-            $("#consulta").append(bloco);
+            for(var i = 0; i <= desempacotado.length; i++)
+            {
+                bloco =     "<tr>"
+                bloco +=    "<td>" + desempacotado[i].cpf + "</td>";
+                bloco +=    "<td>" + desempacotado[i].nome + "</td>";
+                bloco +=    "<td>" + desempacotado[i].email + "</td>";
+                bloco +=    "<td>" + desempacotado[i].senha + "</td>";
+                bloco +=    "</tr>"
+                $("#consulta").append(bloco);
+            }
         }
     })
     return false;
@@ -60,6 +77,7 @@ function consultarCliente(){
 
 function cadastrarProduto(){
     var dados = new FormData($('#frm_produto')[0]);
+    dados.append('botao', 'Cadastrar');
     $.ajax({
         method: 'POST',
         url: 'php/controle_produto.php',
@@ -81,6 +99,8 @@ function cadastrarProduto(){
 
 function apagarProduto(){
     var dados = new FormData($('#frm_produto')[0]);
+    dados.append('botao', 'Apagar');
+
     $.ajax({
         method: 'POST',
         url: 'php/controle_produto.php',
@@ -97,24 +117,37 @@ function apagarProduto(){
 }
 
 function consultarProduto(){
+    var dados = new FormData($('#frm_produto')[0]);
+    dados.append('botao', 'Consultar');
+
     $.ajax({
-        url: 'php/controle_produto.php'
+        method: 'POST',
+        url: 'php/controle_produto.php',
+        data: dados,
+        processData: false,
+        contentType: false
     })
 
     .done(function(msg){
-        var desempacotado = JSON.parse(msg);
-        
-        for(var i = 0; i <= desempacotado.length; i++)
-        {
-            bloco =     "<tr>"
-            bloco +=    "<td>" + desempacotado[i].id + "</td>";
-            bloco +=    "<td>" + desempacotado[i].nome_prod + "</td>";
-            bloco +=    "<td>" + desempacotado[i].preco + "</td>";
-            bloco +=    "<td>" + desempacotado[i].descricao + "</td>";
-            bloco +=    "<td><img src='http://localhost/pw/loja_virtual/imagens/" + desempacotado[i].foto + "'width='50px' height='50px'></td>";
-            bloco +=    "</tr>"
-            $("#consulta").append(bloco);
+        if(msg.slice(0,3) == 'Pel'){
+            alert(msg);
         }
+        else{
+            $('td').remove();
+            var desempacotado = JSON.parse(msg);
+        
+            for(var i = 0; i <= desempacotado.length; i++)
+            {
+                bloco =     "<tr>"
+                bloco +=    "<td>" + desempacotado[i].id + "</td>";
+                bloco +=    "<td>" + desempacotado[i].nome_prod + "</td>";
+                bloco +=    "<td>" + desempacotado[i].preco + "</td>";
+                bloco +=    "<td>" + desempacotado[i].descricao + "</td>";
+                bloco +=    "<td><img src='http://localhost/pw/loja_virtual/imagens/" + desempacotado[i].foto + "'width='50px' height='50px'></td>";
+                bloco +=    "</tr>"
+                $("#consulta").append(bloco);
+            }
+        }  
     })
     return false;
 }

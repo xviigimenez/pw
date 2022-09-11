@@ -53,9 +53,9 @@
                     <label for="foto">Foto</label>
                     <input type="file" id="foto" name="foto"><br><br>
                     <div>			        
-                        <input type="button" name="cadastrar" value="Cadastrar" onclick="cadastrarProduto()">
-			            <input type="button" name="apagar" value="Apagar" onclick="apagarProduto();">
-                        <input type="button" name="apagar" value="Consultar" onclick="consultarProduto();">
+                        <input type="button" name="botao" value="Cadastrar" onclick="cadastrarProduto()">
+			            <input type="button" name="botao" value="Apagar" onclick="apagarProduto();">
+                        <input type="button" name="botao" value="Consultar" onclick="consultarProduto();">
 		            </div>
                 </form>
             </div>

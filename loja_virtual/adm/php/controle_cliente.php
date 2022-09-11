@@ -3,12 +3,14 @@ include_once 'clsAdm.php';
 
 $classe = new clsAdm;
 
-$cpf = $_POST['cpf'];
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
+$botao = $_POST['botao'];
 
-if($cpf != null && $nome != null){
+if($botao == 'Cadastrar'){
+    $cpf = $_POST['cpf'];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
     $classe->setCPF($cpf);
     $classe->setNome($nome);
     $classe->setEmail($email);
@@ -16,12 +18,14 @@ if($cpf != null && $nome != null){
 
     $classe->cadastrarCliente();
 }
-elseif($cpf != null) {
+if($botao == 'Apagar'){
+    $cpf = $_POST['cpf'];
+    
     $classe->setCPF($cpf);
 
     $classe->deletarCliente();
 }
-else{
+if($botao == 'Consultar'){
     $classe->consultarCliente();
 }
 ?>

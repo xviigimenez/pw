@@ -3,7 +3,9 @@ include_once 'clsAdm.php';
 
 $classe = new clsAdm;
 
-if(isset($_POST['id']) && $_POST['produto'] != null){
+$botao = $_POST['botao'];
+
+if($botao == 'Cadastrar'){
     $id = $_POST['id'];
     $nome = $_POST['produto'];
     $preco = $_POST['preco'];
@@ -20,14 +22,14 @@ if(isset($_POST['id']) && $_POST['produto'] != null){
 
     $classe->cadastrarProduto();
 }
-elseif(isset($_POST['id']) && $_POST['produto'] == null){
+if($botao == 'Apagar'){
     $id = $_POST['id'];
 
     $classe->setID($id);
 
     $classe->deletarProduto();
 }
-else{
+if($botao == 'Consultar'){
     $classe->consultarProduto();
 }
 ?>

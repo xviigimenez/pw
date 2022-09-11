@@ -65,7 +65,7 @@
                         <th>Nome</th>
                         <th>Email</th>
                         <th>Senha</th>
-                    </tr>
+                    <tr>
                 </table>
             </div>
         </main>
