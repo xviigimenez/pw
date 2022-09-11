@@ -9,9 +9,11 @@ create table cliente(
 );
 
 create table produto(
-	id int auto_increment primary key,
+	id int primary key,
     nome_prod varchar(50) not null,
     preco decimal(6,2) not null,
     descricao varchar(500) not null,
     foto varchar(150) not null
 );
+
+insert into produto values (1,'Charutos cubanos',7.50,'Uma caixa de charutos vindos diretamente de Havana.','charutos_cubanos.jpg');

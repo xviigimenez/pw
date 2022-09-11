@@ -56,11 +56,12 @@ function consultarCliente(){
             alert(msg);
         }else{
             $('td').remove();
+            $('#pacoca').remove();
             var desempacotado = JSON.parse(msg);
         
             for(var i = 0; i <= desempacotado.length; i++)
             {
-                bloco =     "<tr>"
+                bloco =     "<tr id='pacoca'>"
                 bloco +=    "<td>" + desempacotado[i].cpf + "</td>";
                 bloco +=    "<td>" + desempacotado[i].nome + "</td>";
                 bloco +=    "<td>" + desempacotado[i].email + "</td>";
@@ -134,11 +135,12 @@ function consultarProduto(){
         }
         else{
             $('td').remove();
+            $('#pacoca').remove();
             var desempacotado = JSON.parse(msg);
         
             for(var i = 0; i <= desempacotado.length; i++)
             {
-                bloco =     "<tr>"
+                bloco =     "<tr id='pacoca'>"
                 bloco +=    "<td>" + desempacotado[i].id + "</td>";
                 bloco +=    "<td>" + desempacotado[i].nome_prod + "</td>";
                 bloco +=    "<td>" + desempacotado[i].preco + "</td>";

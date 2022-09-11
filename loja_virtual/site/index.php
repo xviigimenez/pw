@@ -3,10 +3,11 @@
     <head>
         <title>J&R - Início</title>
         <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="icon" type="image/x-icon" href="css/favicon.ico">
     </head>
-    <body>
+    <body onload="consultarProduto()">
         <header>
             <div class="logo">
                 <h1><a href="index.php">J&R</a></h1>
@@ -23,46 +24,15 @@
             <div class="carrossel">
                 <img src="img/banner.jpg" alt="J&R">
             </div>
+
             <div class="cards">
-                <div class="card">
-                    <img src="../imagens/charutos_cubanos.jpg" alt="Charutos cubanos">
-                    <div class="container">
-                        <h4><b>Charuto cubano</b></h4>
-                        <p>Uma caixa de charutos vindos diretamente de Havana.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imagens/charutos_cubanos.jpg" alt="Charutos cubanos">
-                    <div class="container">
-                        <h4><b>Charuto cubano</b></h4>
-                        <p>Uma caixa de charutos vindos diretamente de Havana.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imagens/charutos_cubanos.jpg" alt="Charutos cubanos">
-                    <div class="container">
-                        <h4><b>Charuto cubano</b></h4>
-                        <p>Uma caixa de charutos vindos diretamente de Havana.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imagens/charutos_cubanos.jpg" alt="Charutos cubanos">
-                    <div class="container">
-                        <h4><b>Charuto cubano</b></h4>
-                        <p>Uma caixa de charutos vindos diretamente de Havana.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imagens/charutos_cubanos.jpg" alt="Charutos cubanos">
-                    <div class="container">
-                        <h4><b>Charuto cubano</b></h4>
-                        <p>Uma caixa de charutos vindos diretamente de Havana.</p>
-                    </div>
-                </div>
+                
             </div>
+
         </main>
         <footer>
             <p>Esta página foi criada por <a target="_blank" href="https://github.com/xviigimenez/">Gustavo Gimenez Correa</a> e <a target="_blank" href="https://github.com/GabrielDaloco">Gabriel Rangel Maciel Daloco</a>.</p>
         </footer>
+        <script src="js/eventos.js"></script>
     </body>
 </html>

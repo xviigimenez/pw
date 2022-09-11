@@ -1,5 +1,9 @@
 <?php
-include '../conexao/conexao.php';
+
+if(file_exists('../conexao/conexao.php'))
+    include_once '../conexao/conexao.php';
+else
+    include_once '../../adm/conexao/conexao.php';
 
 class clsAdm{
     private $cpf, $nome, $email, $senha, $id, $nome_prod, $preco, $desc, $foto, $foto_tmp;
@@ -180,10 +184,10 @@ class clsAdm{
             $Retorno = 'Como é que vou deletar sem a porcaria do id? Seu cabeçudo.';
         }
         else{
-            $select = $conexao->prepare('select foto from produto where id = ?');
-            $select->bindParam(1,$this->id);
-            $select->execute();
-            $fetch = $select->fetch();
+            $delete = $conexao->prepare('select foto from produto where id = ?');
+            $delete->bindParam(1,$this->id);
+            $delete->execute();
+            $fetch = $delete->fetch();
             $nome_arquivo = $fetch['foto'];
 
             unlink("../../imagens/" . $nome_arquivo . "");
@@ -215,6 +219,24 @@ class clsAdm{
          }
         else{
             $resultado = "Pelo amor cara, vc tá tentando consultar sem dados? Aí não né!";
+        }
+    echo $resultado;
+    }
+
+    public function entrarCliente(){
+        $bd = new Conexao();
+		$conexao = $bd->getConexao();
+
+        $select = $conexao->prepare('select * from cliente where email = ? and senha = ?');
+        $select->bindParam(1,$this->email);
+        $select->bindParam(2,$this->senha);
+        $select->execute();
+
+        if($select->rowCount()>0){
+            $resultado = 'Logado!';
+         }
+        else{
+            $resultado = "Botou algo errado aí.";
         }
     echo $resultado;
     }
